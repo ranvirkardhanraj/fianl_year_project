@@ -1,0 +1,9 @@
+---
+- name: 'Playbook started'
+  hosts: all
+  user: root
+  ignore_errors: yes
+  tasks:
+  - name: 'Creating deployment of supermario'
+    command: kubectl create deployment --name=supermario --image=kaminskypavel/mario
+  - name: 
